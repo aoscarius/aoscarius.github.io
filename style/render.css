@@ -40,8 +40,8 @@
   --tag-gfx: #fbefff;
   --tag-game: #ffefef;
   --tag-os: #e6fffa;
-  --tag-embedded: #888aff;
-  --tag-develop: #ffa857;
+  --tag-embedded: #ffa857;
+  --tag-develop: #9757ff;
 }
 
 /* GLOBAL OVERLAY */
@@ -329,19 +329,19 @@ body {
 }
 .games {
   background: var(  --tag-game);
-  color: #005a5a;
+  color: #005a4b;
 }
 .osdev {
   background: var(--tag-os);
-  color: #005a5a;
+  color: #00455a;
 }
 .embedded {
   background: var(--tag-embedded);
-  color: #005a5a;
+  color: #002e2e;
 }
 .develop {
   background: var(--tag-develop);
-  color: #005a5a;
+  color: #014444;
 }
 
 /* FOOTER */

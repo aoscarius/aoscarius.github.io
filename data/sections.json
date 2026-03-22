@@ -2,19 +2,21 @@
   "projects": {
     "title": "> ./list-repos --filter=featured",
     "items": [
-        { "tag": "FIRMWARE", "class": "fw", "h3": "custom-rtos-kernel", "p": "Priority-based preemptive scheduler for ARM Cortex-M. Zero-copy IPC and minimal footprint.", "link": "[DOCUMENTATION]", "url": "#" },
-        { "tag": "YOCTO", "class": "yocto", "h3": "meta-industrial-layer", "p": "Custom Yocto BSP layer for i.MX8 family. Hardened kernel and optimized systemd boot times.", "link": "[LAYER_SOURCE]", "url": "#" },
-        { "tag": "EDGE AI", "class": "ai", "h3": "neural-iot-optimizer", "p": "Pipeline for QAT (Quantization-Aware Training) targeting low-power ESP32-S3 NPUs.", "link": "[LIVE_DEMO]", "url": "#" },
-        { "tag": "GRAPHICS", "class": "graphics", "h3": "webgl-telemetry-3d", "p": "Hardware-accelerated sensor fusion visualizer using WebGL and custom GLSL shaders.", "link": "[LAUNCH_APP]", "url": "#" },
-        { "tag": "GAMES", "class": "games", "h3": "doom-port-embedded", "p": "Extending the classic Doom engine to run on obscure industrial displays and bare-metal.", "link": "[PORT_LOGS]", "url": "#" },
-        { "tag": "OSDEV", "class": "osdev", "h3": "unix-like-kernel", "p": "Educational x86_64 kernel. Implements basic paging, interrupts, and a simple VFS.", "link": "[KERNEL_SRC]", "url": "#" }
+        { "tag": "GAMES", "class": "games", "h3": "iso-portal", "p": "A WebGL2 implementation of Portal ispired isometric game with full Desktop/Mobile/AR support.<br/><h5>COMING SOON...</h5>", "link": "[SOURCE]", "url": "#" },
+        { "tag": "AI", "class": "ai", "h3": "RAGnarok", "p": "A fully offline Retrieval-Augmented Generation (RAG) system with multiple interfaces (Web UI, TUI, CLI) powered by local LLMs and vector embeddings.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/RAGnarok" },
+        { "tag": "FIRMWARE", "class": "fw", "h3": "esp32usbmsc", "p": "Simple ESP32 USB Mass Storage example with FAT12/16 and LittleFS. Tested on ESP32S3.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/esp32usbmsc" },
+        { "tag": "EMBEDDED", "class": "embedded", "h3": "pyIOCTL", "p": "A simple dynamic IOCTL test tool for low level kernel device development and debug purpose.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/pyIOCTL" },
+        { "tag": "GRAPHICS", "class": "graphics", "h3": "nodegraph", "p": "A simple implementation experiment of node based graph pipeline in pure C++", "link": "[SOURCE]", "url": "https://github.com/aoscarius/nodegraph" },
+        { "tag": "DEVELOP", "class": "develop", "h3": "SDEP", "p": "A simple protocol for data exchange between heterogeneous system in a PROBE+HUB context.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/SDEP" },
+        { "tag": "EMBEDDED", "class": "embedded", "h3": "USBVCPShell", "p": "A simple minimal command line shell for the STM32F4-Discovery board.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/USBVCPShell" }
     ]
   },
   "skills": {
     "title": "> systemctl status skills.service",
     "items": [
-      { "tag": "LOW_LEVEL", "class": "osdev", "h3": "Languages & Arch", "p": "x86 Assembly, ARM Assembly, C, C++, Rust, RISC-V.", "link": "[TECH_STACK]", "url": "#" },
-      { "tag": "EMBEDDED", "class": "embedded", "h3": "Embedded Linux", "p": "Kernel Hacking, Device Drivers, Yocto Project, Buildroot, U-Boot.", "link": "[OS_INTERNALS]", "url": "#" }
+      { "tag": "LOW LEVEL", "class": "osdev", "h3": "Languages & Arch", "p": "x86 Assembly, ARM Assembly, C, C++, Rust, RISC-V, MIPS, etc...", "link": "[TECH_STACK]", "url": "#" },
+      { "tag": "EMBEDDED", "class": "embedded", "h3": "Embedded Linux", "p": "Kernel Hacking, Device Drivers, Yocto Project, Buildroot, U-Boot, etc...", "link": "[OS_INTERNALS]", "url": "#" },
+      { "tag": "SYSTEMS", "class": "develop", "h3": "FPGA/CPLD", "p": "Altera, Xilinx, Lattice, Gowin, Verilog, VHDL, Migen, LiteX", "link": "[SILICON]", "url": "#" }
     ]
   }
 }

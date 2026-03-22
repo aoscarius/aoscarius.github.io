@@ -194,6 +194,7 @@ body.no-scroll {
         ".    down  .";
     gap: 2px;
     pointer-events: auto;
+    user-select: none;
 }
 
 .btn-dpad {
@@ -207,13 +208,14 @@ body.no-scroll {
     justify-content: center;
     font-size: 1.2rem;
     box-shadow: inset 0 0 5px rgba(0,0,0,0.8);
+    user-select: none;
 }
 
-.btn-up    { grid-area: up; border-radius: 5px 5px 0 0; }
-.btn-down  { grid-area: down; border-radius: 0 0 5px 5px; }
-.btn-left  { grid-area: left; border-radius: 5px 0 0 5px; }
-.btn-right { grid-area: right; border-radius: 0 5px 5px 0; }
-.btn-center { grid-area: center; background: #1a1a1a; pointer-events: none; }
+.btn-up    { grid-area: up; border-radius: 5px 5px 0 0; user-select: none;}
+.btn-down  { grid-area: down; border-radius: 0 0 5px 5px; user-select: none;}
+.btn-left  { grid-area: left; border-radius: 5px 0 0 5px; user-select: none;}
+.btn-right { grid-area: right; border-radius: 0 5px 5px 0; user-select: none;}
+.btn-center { grid-area: center; background: #1a1a1a; pointer-events: none; user-select: none;}
 
 /* ACTION BUTTONS (Slanted A/B) */
 .action-buttons {
@@ -221,6 +223,7 @@ body.no-scroll {
     gap: 15px;
     transform: rotate(-15deg); /* Classic Nintendo slant */
     pointer-events: auto;
+    user-select: none;
 }
 
 .btn-action {
@@ -236,12 +239,14 @@ body.no-scroll {
     font-weight: bold;
     font-family: 'Arial', sans-serif;
     box-shadow: 3px 3px 0px rgba(0,0,0,0.5);
+    user-select: none;
 }
 
 .btn-action:active, .btn-dpad:active {
     background: #39ff14;
     color: #000;
     transform: scale(0.9);
+    user-select: none;
 }
 
 /* if device has a touch screen */

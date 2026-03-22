@@ -44,8 +44,8 @@ Use this key combination or D-pad (on mobile devices) to discover hidden Easter 
         keyb = OUTATIME
         dpad = UP UP DOWN RIGHT A B
     }
-    GHOST BUSTER {
-        keyb = sLIMER
+    GHOSTBUSTER {
+        keyb = SLIMER
         dpad = LEFT LEFT UP RIGHT B B
     }
 ```
