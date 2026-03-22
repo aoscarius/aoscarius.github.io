@@ -1,0 +1,17 @@
+{
+  "sequence": [
+    { "type": "command", "host": "dev", "text": "ssh aoscarius@edge-node" },
+    { "type": "output", "host": "edge-node", "text": "\nConnection active. Integrity check: OK.\nBypassing standard shell..." },
+    { "type": "output", "host": "edge-node", "text": "    _            ___  ___ \n   /_\\   ___ __ / _ \\/ __|\n  / _ \\ (_-</ _| (_) \\__ \\\n /_/ \\_\\/__/\\__|\\___/|___/\n" },
+    { "type": "output", "host": "edge-node", "text": "FLUX_CAPACITOR: Activating...\nSTATUS: 1.21_GIGAWATTS [Required]\nPOWER_SOURCE: Plutonium_Chamber [Empy]\n" },
+    { "type": "command", "host": "edge-node", "text": "bttf-sysctl --init --flux-capacitor" },
+    { "type": "command", "host": "edge-node", "text": "cat timetravel.log" },
+    { "type": "output", "host": "edge-node", "text": "\nOCT 21 2015 04:29 PM - Hill Valley, CA\nNOV 12 1955 06:38 AM - Hill Valley, CA\n" },
+    { "type": "command", "host": "edge-node", "text": "cat systemcaps.json" },
+    { "type": "output", "host": "edge-node", "text": "\n{\n  \"low_level\": [\"C\", \"C++\", \"RTOS\"],\n  \"linux\": [\"Yocto\", \"Drivers\"],\n  \"ai\": [\"TFLite\", \"Quantization\"]\n}" },
+    { "type": "command", "host": "edge-node", "text": "ls -l" },
+    { "type": "output", "host": "edge-node", "text": "\ndrwxr-xr-x 5 aoscarius aoscarius  4096 Mar 11 22:11 doom\n" },
+    { "type": "command", "host": "edge-node", "text": "Great Scott!" },
+    { "type": "output", "host": "edge-node", "text": "" }
+  ]
+}

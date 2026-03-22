@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "title": "> ./list-repos --filter=featured",
+    "items": [
+        { "tag": "FIRMWARE", "class": "fw", "h3": "custom-rtos-kernel", "p": "Priority-based preemptive scheduler for ARM Cortex-M. Zero-copy IPC and minimal footprint.", "link": "[DOCUMENTATION]", "url": "#" },
+        { "tag": "YOCTO", "class": "yocto", "h3": "meta-industrial-layer", "p": "Custom Yocto BSP layer for i.MX8 family. Hardened kernel and optimized systemd boot times.", "link": "[LAYER_SOURCE]", "url": "#" },
+        { "tag": "EDGE AI", "class": "ai", "h3": "neural-iot-optimizer", "p": "Pipeline for QAT (Quantization-Aware Training) targeting low-power ESP32-S3 NPUs.", "link": "[LIVE_DEMO]", "url": "#" },
+        { "tag": "GRAPHICS", "class": "graphics", "h3": "webgl-telemetry-3d", "p": "Hardware-accelerated sensor fusion visualizer using WebGL and custom GLSL shaders.", "link": "[LAUNCH_APP]", "url": "#" },
+        { "tag": "GAMES", "class": "games", "h3": "doom-port-embedded", "p": "Extending the classic Doom engine to run on obscure industrial displays and bare-metal.", "link": "[PORT_LOGS]", "url": "#" },
+        { "tag": "OSDEV", "class": "osdev", "h3": "unix-like-kernel", "p": "Educational x86_64 kernel. Implements basic paging, interrupts, and a simple VFS.", "link": "[KERNEL_SRC]", "url": "#" }
+    ]
+  },
+  "skills": {
+    "title": "> systemctl status skills.service",
+    "items": [
+      { "tag": "LOW_LEVEL", "class": "osdev", "h3": "Languages & Arch", "p": "x86 Assembly, ARM Assembly, C, C++, Rust, RISC-V.", "link": "[TECH_STACK]", "url": "#" },
+      { "tag": "EMBEDDED", "class": "embedded", "h3": "Embedded Linux", "p": "Kernel Hacking, Device Drivers, Yocto Project, Buildroot, U-Boot.", "link": "[OS_INTERNALS]", "url": "#" }
+    ]
+  }
+}

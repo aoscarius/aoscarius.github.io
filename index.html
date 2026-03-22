@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aoscarius | Embedded & AI Engineer</title>
+    <link rel="stylesheet" href="style/render.css">
+    <link rel="stylesheet" href="style/eeggs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Mobile Interface -->
+    <div class="mobile-controls">
+        <!-- Nintendo D-Pad Cross -->
+        <div class="dpad-container">
+            <div class="btn-dpad btn-up" onclick="mobilePress('UP')">▲</div>
+            <div class="btn-dpad btn-left" onclick="mobilePress('LEFT')">◀</div>
+            <div class="btn-dpad btn-center"></div>
+            <div class="btn-dpad btn-right" onclick="mobilePress('RIGHT')">▶</div>
+            <div class="btn-dpad btn-down" onclick="mobilePress('DOWN')">▼</div>
+        </div>
+
+        <!-- Slanted Action Buttons -->
+        <div class="action-buttons">
+            <div class="btn-action" onclick="mobilePress('B')">B</div>
+            <div class="btn-action" onclick="mobilePress('A')">A</div>
+        </div>
+    </div>
+
+    <!-- Scanlines effect -->
+    <div class="scanlines"></div>
+
+    <!-- Main container -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <div class="branding">
+                <h1><span class="status-dot"></span>Oscar Castello</h1>
+                <p class="tagline">System Design // Embedded Firmware // Edge AI // More...</p>
+            </div>
+            <nav class="nav-group">
+                <a href="https://it.linkedin.com/in/oscarcastello" class="nav-link">[LINKEDIN]</a>
+                <a href="https://github.com/aoscarius" class="nav-link">[GITHUB]</a>
+                <a href="https://gitlab.com/aoscarius" class="nav-link">[GITLAB]</a>
+                <button id="theme-toggle" class="theme-switch" aria-label="Toggle Theme">
+                    <span class="icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Terminal Section -->
+        <section class="terminal-container">
+            <div class="terminal-bar">
+                <div class="buttons">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="title">aoscarius@dev: ~ (bash)</div>
+            </div>
+            <div class="terminal-window" id="terminal-content"></div>
+        </section>
+
+        <!-- Dynamic Content Mount Points -->
+        <div id="dynamic-sections"></div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <p class="disclaimer">
+                <strong>SYSTEM_READY:</strong> Terminal link established. 
+            </p>
+            <p class="footer-meta">&copy; 2026 AOSCARIUS // DATA-DRIVEN ARCH</p>
+        </div>
+    </footer>
+
+    <!-- Script Section to enable functionaties -->
+    <script src="logic/render.js" type="text/javascript"></script>
+    <script src="logic/eeggs.js" type="text/javascript"></script>
+</body>
+</html>
