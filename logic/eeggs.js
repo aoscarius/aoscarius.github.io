@@ -170,11 +170,17 @@
     // --- EFFECT: GHOSTBUSTERS ---
     function triggerGhostbusters() {
         logCheatStatus("PKE_VALENCE_RISING");
+        const ghost = document.createElement('div');
+        ghost.className = 'ghost-trap';
+        ghost.innerHTML = `<div class="ghost-glitches"><span class="ghost-word">GHOST</span><div class="ghost-letters"><span class="letter">G</span><span class="letter">H</span><span class="letter">O</span><span class="letter">S</span><span class="letter">T</span></div></div>`
+        document.body.appendChild(ghost);
+
         const stream = document.createElement('div');
         stream.className = 'proton-stream';
         document.body.appendChild(stream);
         
         setTimeout(() => {
+            ghost.remove();
             stream.remove();
             logCheatStatus("GHOST_TRAPPED_SUCCESS");
         }, 3500);
