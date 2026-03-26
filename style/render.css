@@ -309,6 +309,13 @@ body {
   font-weight: bold;
   border-bottom: 1px dashed var(--hover-color);
 }
+.repo-links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin-top: 12px;
+}
 
 /* TAG COLORS */
 .fw {

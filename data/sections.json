@@ -2,21 +2,22 @@
   "projects": {
     "title": "> ./list-repos --filter=featured",
     "items": [
-        { "tag": "GAMES", "class": "games", "h3": "iso-portal", "p": "A WebGL2 implementation of Portal ispired isometric game with full Desktop/Mobile/AR support.<br/><h5>COMING SOON...</h5>", "link": "[SOURCE]", "url": "#" },
-        { "tag": "AI", "class": "ai", "h3": "RAGnarok", "p": "A fully offline Retrieval-Augmented Generation (RAG) system with multiple interfaces (Web UI, TUI, CLI) powered by local LLMs and vector embeddings.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/RAGnarok" },
-        { "tag": "FIRMWARE", "class": "fw", "h3": "esp32usbmsc", "p": "Simple ESP32 USB Mass Storage example with FAT12/16 and LittleFS. Tested on ESP32S3.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/esp32usbmsc" },
-        { "tag": "EMBEDDED", "class": "embedded", "h3": "pyIOCTL", "p": "A simple dynamic IOCTL test tool for low level kernel device development and debug purpose.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/pyIOCTL" },
-        { "tag": "GRAPHICS", "class": "graphics", "h3": "nodegraph", "p": "A simple implementation experiment of node based graph pipeline in pure C++", "link": "[SOURCE]", "url": "https://github.com/aoscarius/nodegraph" },
-        { "tag": "DEVELOP", "class": "develop", "h3": "SDEP", "p": "A simple protocol for data exchange between heterogeneous system in a PROBE+HUB context.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/SDEP" },
-        { "tag": "EMBEDDED", "class": "embedded", "h3": "USBVCPShell", "p": "A simple minimal command line shell for the STM32F4-Discovery board.", "link": "[SOURCE]", "url": "https://github.com/aoscarius/USBVCPShell" }
+        { "tag": "GAMES", "class": "games", "h3": "portal-iso", "p": "A WebGL2 implementation of a Portal ispired isometric game with full Desktop/Mobile/AR support.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/portal-iso"}, {"link": "[PLAY]", "url": "https://aoscarius.github.io/portal-iso/"}] },
+        { "tag": "AI", "class": "ai", "h3": "RAGnarok", "p": "A fully offline Retrieval-Augmented Generation (RAG) system with multiple interfaces (Web UI, TUI, CLI) powered by local LLMs and vector embeddings.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/RAGnarok"}] },
+        { "tag": "DEVELOP", "class": "develop", "h3": "ppokerpro", "p": "A complete free, open source, free account AI generated planning poker webapp for Agile teams.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/ppokerpro"}] },
+        { "tag": "FIRMWARE", "class": "fw", "h3": "esp32usbmsc", "p": "Simple ESP32 USB Mass Storage example with FAT12/16 and LittleFS. Tested on ESP32S3.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/esp32usbmsc"}] },
+        { "tag": "EMBEDDED", "class": "embedded", "h3": "pyIOCTL", "p": "A simple dynamic IOCTL test tool for low level kernel device development and debug purpose.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/pyIOCTL"}] },
+        { "tag": "GRAPHICS", "class": "graphics", "h3": "nodegraph", "p": "A simple implementation experiment of node based graph pipeline in pure C++", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/nodegraph"}] },
+        { "tag": "DEVELOP", "class": "develop", "h3": "SDEP", "p": "A simple protocol for data exchange between heterogeneous system in a PROBE+HUB context.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/SDEP"}] },
+        { "tag": "EMBEDDED", "class": "embedded", "h3": "USBVCPShell", "p": "A simple minimal command line shell for the STM32F4-Discovery board.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/USBVCPShell"}] }
     ]
   },
   "skills": {
     "title": "> systemctl status skills.service",
     "items": [
-      { "tag": "LOW LEVEL", "class": "osdev", "h3": "Languages & Arch", "p": "x86 Assembly, ARM Assembly, C, C++, Rust, RISC-V, MIPS, etc...", "link": "[TECH_STACK]", "url": "#" },
-      { "tag": "EMBEDDED", "class": "embedded", "h3": "Embedded Linux", "p": "Kernel Hacking, Device Drivers, Yocto Project, Buildroot, U-Boot, etc...", "link": "[OS_INTERNALS]", "url": "#" },
-      { "tag": "SYSTEMS", "class": "develop", "h3": "FPGA/CPLD", "p": "Altera, Xilinx, Lattice, Gowin, Verilog, VHDL, Migen, LiteX", "link": "[SILICON]", "url": "#" }
+      { "tag": "LOW LEVEL", "class": "osdev", "h3": "Languages & Arch", "p": "x86 Assembly, ARM Assembly, C, C++, Rust, RISC-V, MIPS, etc...", "links": [{"link": "[TECH_STACK]", "url": "#"}] },
+      { "tag": "EMBEDDED", "class": "embedded", "h3": "Embedded Linux", "p": "Kernel Hacking, Device Drivers, Yocto Project, Buildroot, U-Boot, etc...", "links": [{"link": "[OS_INTERNALS]", "url": "#"}] },
+      { "tag": "SYSTEMS", "class": "develop", "h3": "FPGA/CPLD", "p": "Altera, Xilinx, Lattice, Gowin, Verilog, VHDL, Migen, LiteX", "links": [{"link": "[SILICON]", "url": "#"}] }
     ]
   }
 }

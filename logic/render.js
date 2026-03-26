@@ -6,14 +6,21 @@ function createSection(key, data) {
     const section = document.createElement('section');
     section.className = 'content-section';
     
-    let cardsHtml = data.items.map(item => `
-        <article class="repo-card">
-            <span class="repo-tag ${item.class}">${item.tag}</span>
-            <h3>${item.h3}</h3>
-            <p>${item.p}</p>
-            <a href="${item.url}" class="repo-link">${item.link}</a>
-        </article>
-    `).join('');
+    let cardsHtml = data.items.map(item => {
+        const linksHtml = item.links.map(linkObj => `
+            <a href="${linkObj.url}" class="repo-link">${linkObj.link}</a>
+        `).join(' ');
+        return `
+            <article class="repo-card">
+                <span class="repo-tag ${item.class}">${item.tag}</span>
+                <h3>${item.h3}</h3>
+                <p>${item.p}</p>
+                <div class="repo-links-container">
+                    ${linksHtml}
+                </div>
+            </article>
+        `;
+    }).join('');
 
     section.innerHTML = `
         <h2 class="section-label">${data.title}</h2>
