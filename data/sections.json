@@ -3,6 +3,7 @@
     "title": "> ./list-repos --filter=featured",
     "items": [
         { "tag": "GAMES", "class": "games", "h3": "portal-iso", "p": "A WebGL2 implementation of a Portal ispired isometric game with full Desktop/Mobile/AR support.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/portal-iso"}, {"link": "[PLAY]", "url": "https://aoscarius.github.io/portal-iso/"}] },
+        { "tag": "GAMES", "class": "games", "h3": "bomber-iso", "p": "A WebGL2 implementation of Bomberman ispired isometric game with full Desktop/Mobile/AR support.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/bomber-iso"}, {"link": "[PLAY]", "url": "https://aoscarius.github.io/bomber-iso/"}] },
         { "tag": "AI", "class": "ai", "h3": "RAGnarok", "p": "A fully offline Retrieval-Augmented Generation (RAG) system with multiple interfaces (Web UI, TUI, CLI) powered by local LLMs and vector embeddings.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/RAGnarok"}] },
         { "tag": "DEVELOP", "class": "develop", "h3": "ppokerpro", "p": "A complete free, open source, free account AI generated planning poker webapp for Agile teams.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/ppokerpro"}] },
         { "tag": "FIRMWARE", "class": "fw", "h3": "esp32usbmsc", "p": "Simple ESP32 USB Mass Storage example with FAT12/16 and LittleFS. Tested on ESP32S3.", "links": [{"link": "[SOURCE]", "url": "https://github.com/aoscarius/esp32usbmsc"}] },
