@@ -5,6 +5,7 @@
   --text-main: #c9d1d9;
   --text-bold: #ffffff;
   --border: #30363d;
+  --border-bright: #50565d;
   --card-bg: #161b22;
   --toggle-icon: "\2600";
   --toggle-color: #ddf4ff;
@@ -20,6 +21,7 @@
   --text-main: #24292f;
   --text-bold: #000000;
   --border: #d0d7de;
+  --border-bright: #f0f7fe;
   --card-bg: #f6f8fa;
   --toggle-icon: "\263E";
   --toggle-color: #000000;
@@ -250,6 +252,43 @@ body {
     opacity: 0;
   }
 }
+.terminal-container.fullscreen {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: none;
+  max-height: none;
+  margin: 0;
+  border-radius: 0;
+  z-index: 9999;
+  box-shadow: none;
+}
+.terminal-container.fullscreen .terminal-window {
+  height: calc(100vh - 60px);
+  max-height: none;
+  overflow-y: auto;
+  margin-bottom: 25px;
+}
+body:has(.terminal-container.fullscreen),
+html:has(.terminal-container.fullscreen) {
+  overflow: hidden;
+}
+body:has(.terminal-container:not([class*="fullscreen"])),
+html:has(.terminal-container:not([class*="fullscreen"])) {
+  overflow-y: auto;
+}
+
+/* Reponsive effects */
+@media (max-width: 768px) {
+    .terminal-window,
+    .terminal-window .cmd-text,
+    .terminal-window .terminal-output {
+        white-space: pre-wrap;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+}
 
 /* GRID & CARDS */
 .content-section {
@@ -369,3 +408,16 @@ body {
   opacity: 0.7;
   line-height: 1.6;
 }
+
+/* Scrollbars */
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: var(--bg-main); }
+::-webkit-scrollbar-thumb { background: var(--border); }
+::-webkit-scrollbar-thumb:hover { background: var(--border-bright); }
+* { scrollbar-width: thin; scrollbar-color: var(--border) var(--bg-sec); }
+/* Terminal scrollbar always dark */
+.terminal-window::-webkit-scrollbar { width: 12px; }
+.terminal-window::-webkit-scrollbar-track { background: #0d1117; }
+.terminal-window::-webkit-scrollbar-thumb { background: #30363d; }
+.terminal-window::-webkit-scrollbar-thumb:hover { background: #50565d; }
+.terminal-window { scrollbar-width: thin; scrollbar-color: #30363d #161b22; }

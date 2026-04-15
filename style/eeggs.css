@@ -252,6 +252,7 @@ body.no-scroll {
     opacity: 0.3; /* Ghostly opacity as requested */
     transition: opacity 0.2s;
 }
+.mobile-controls.hidden { display: none}
 
 .mobile-controls:active { opacity: 0.6; }
 

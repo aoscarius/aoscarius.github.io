@@ -4,16 +4,16 @@
  * Logic: Fully viewport-locked, non-destructive (no page reload)
  */
 
-(function() {
-    // Sequence Definitions
-    const CHEATS = {
-        GOD: { kb: "IDDQD", pad: "UPUPDOWNDOWNAB" }, // DOOM
-        FATALITY: { kb: "KOMBAT", pad: "RIGHTLEFTRIGHTLEFTBA" }, // Mortal Kombat
-        MATRIX: { kb: "MARCO", pad: "UPRIGHTDOWNLEFTAA" }, // Matrix
-        BTTF: { kb: "OUTATIME", pad: "UPUPDOWNRIGHTAB" }, // Back to the Future
-        GHOST: { kb: "SLIMER", pad: "LEFTLEFTUPRIGHTBB" }  // Ghostbusters
-    };
+// Sequence Definitions
+const CHEATS = {
+    GOD: { kb: "IDDQD", pad: "UPUPDOWNDOWNAB" }, // DOOM
+    FATALITY: { kb: "KOMBAT", pad: "RIGHTLEFTRIGHTLEFTBA" }, // Mortal Kombat
+    MATRIX: { kb: "MARCO", pad: "UPRIGHTDOWNLEFTAA" }, // Matrix
+    BTTF: { kb: "OUTATIME", pad: "UPUPDOWNRIGHTAB" }, // Back to the Future
+    GHOST: { kb: "SLIMER", pad: "LEFTLEFTUPRIGHTBB" }  // Ghostbusters
+};
 
+(function() {
     let inputBuffer = "";
     let lastKeyTime = Date.now();
     const TIMEOUT = 1500;
