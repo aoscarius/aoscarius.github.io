@@ -52,7 +52,7 @@
         <!-- Terminal Section -->
         <section class="terminal-container">
             <div class="terminal-bar">
-                <div class="buttons">
+                <div id="termFSToggle" class="buttons">
                     <span class="dot red"></span>
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
@@ -60,6 +60,7 @@
                 <div class="title">aoscarius@dev: ~ (bash)</div>
             </div>
             <div class="terminal-window" id="terminal-content"></div>
+            <input type="text" id="hiddenTermIn" style="position: absolute; opacity: 0; pointer-events: none;">
         </section>
 
         <!-- Dynamic Content Mount Points -->

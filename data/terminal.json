@@ -10,7 +10,7 @@
     { "type": "command", "host": "edge-node", "text": "cat systemcaps.json" },
     { "type": "output", "host": "edge-node", "text": "\n{\n  \"low_level\": [\"C\", \"C++\", \"RTOS\"],\n  \"linux\": [\"Yocto\", \"Drivers\"],\n  \"ai\": [\"TFLite\", \"Quantization\"]\n}" },
     { "type": "command", "host": "edge-node", "text": "ls -l" },
-    { "type": "output", "host": "edge-node", "text": "\ndrwxr-xr-x 5 aoscarius aoscarius  4096 Mar 11 22:11 doom\n" },
+    { "type": "output", "host": "edge-node", "text": "\ndrwxr-xr-x 1 aoscarius aoscarius  4096 Mar 11 22:11 doom\n" },
     { "type": "command", "host": "edge-node", "text": "Great Scott!" },
     { "type": "output", "host": "edge-node", "text": "" }
   ]
